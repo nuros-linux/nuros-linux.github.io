@@ -1,18 +1,14 @@
+/* Импорт шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Основные стили для всего сайта */
 body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    font-family: 'Noto Sans';
     color: #333;
     line-height: 1.6;
-}
-/* Шрифт */
-
-.comfortaa-<uniquifier> {
-  font-family: "Comfortaa", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
 }
 
 /* Стили для шапки */
