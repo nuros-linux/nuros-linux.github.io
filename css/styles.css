@@ -1,19 +1,23 @@
-/* Импорт шрифта */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
 /* Основные стили для всего сайта */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans';
-    background-color: #f0f4f8;
+    background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
+}
+/* Шрифт */
+
+.comfortaa-<uniquifier> {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
 /* Стили для шапки */
 header {
-    background-color: #2c74d7;
+    background-color: #4A90E2; /* Ярко-синий */
     padding: 40px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -24,6 +28,7 @@ header h1 {
     font-size: 4rem;
     font-weight: bold;
     margin: 0;
+    letter-spacing: 2px;
 }
 
 /* Стили для навигации */
@@ -34,7 +39,7 @@ nav ul {
     display: flex;
     justify-content: center;
     background-color: #fff;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 3px solid #E74C3C; /* Красная линия */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -44,16 +49,16 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #2c74d7;
+    color: #4A90E2; /* Синий для ссылок */
     font-weight: 700;
     font-size: 1.5rem;
     padding: 15px 20px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #1a50a2;
-    border-bottom: 3px solid #1a50a2;
+    color: #E74C3C; /* Переход на красный при наведении */
+    border-bottom: 3px solid #F39C12; /* Оранжевая линия при наведении */
 }
 
 /* Стили для основного контента */
@@ -78,6 +83,7 @@ section p {
     margin-bottom: 30px;
 }
 
+/* Акцентные элементы */
 section ul {
     font-size: 1.5rem;
     color: #555;
@@ -87,22 +93,24 @@ section ul {
 
 section ul li {
     padding: 10px;
+    background-color: #D1E8E4; /* Светло-зеленый фон для пунктов */
+    margin-bottom: 15px;
+    border-radius: 8px;
 }
 
-/* Стили для ссылок внутри контента */
 section a {
-    color: #2c74d7;
+    color: #9B59B6; /* Пурпурный для ссылок */
     text-decoration: none;
     font-weight: bold;
 }
 
 section a:hover {
-    color: #1a50a2;
+    color: #8E44AD; /* Более темный пурпурный при наведении */
 }
 
 /* Стили для футера */
 footer {
-    background-color: #2c74d7;
+    background-color: #34495E; /* Темно-серый фон для футера */
     padding: 40px;
     text-align: center;
     color: #fff;
@@ -111,12 +119,11 @@ footer {
 }
 
 footer a {
-    color: #fff;
+    color: #F39C12; /* Оранжевый для ссылок в футере */
     text-decoration: none;
     font-weight: bold;
 }
 
 footer a:hover {
-    color: #ddd;
+    color: #E74C3C; /* Красный при наведении в футере */
 }
-
