@@ -1,74 +1,119 @@
+/* Основные стили для всего сайта */
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Comfortaa', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f0f4f8;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Стили для шапки */
 header {
     background-color: #2c74d7;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     color: #fff;
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: bold;
     margin: 0;
 }
 
+/* Стили для навигации */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 20px 0;
     display: flex;
     justify-content: center;
     background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #2c74d7;
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #1a50a2;
+    border-bottom: 3px solid #1a50a2;
 }
 
+/* Стили для основного контента */
 section {
     text-align: center;
-    padding: 50px 20px;
+    padding: 80px 20px;
+    background-color: #f8f9fa;
 }
 
 section h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: bold;
     color: #333;
+    margin-bottom: 30px;
 }
 
-section p, ul {
-    font-size: 1.2rem;
-    color: #666;
+section p {
+    font-size: 1.5rem;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
+section ul {
+    font-size: 1.5rem;
+    color: #555;
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    padding: 10px;
+}
+
+/* Стили для ссылок внутри контента */
+section a {
+    color: #2c74d7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section a:hover {
+    color: #1a50a2;
+}
+
+/* Стили для футера */
 footer {
-    background-color: #f1f1f1;
-    padding: 20px;
+    background-color: #2c74d7;
+    padding: 40px;
     text-align: center;
-    font-size: 1rem;
-    color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 50px;
 }
 
 footer a {
-    color: #2c74d7;
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 footer a:hover {
-    color: #1a50a2;
+    color: #ddd;
 }
+
