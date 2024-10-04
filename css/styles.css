@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Анимации */
-@keyframes hyperlink_anim {
+@keyframes hyperlinkanim {
     0% {
         transform: scale(1);
     }
@@ -30,6 +30,10 @@ header {
     padding: 40px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+a:hover{
+    animation: hyperlinkanim 1.0s ease-in-out;
 }
 
 header h1 {
@@ -115,7 +119,6 @@ section a {
 
 section a:hover {
     color: #8E44AD; /* Более темный пурпурный при наведении */
-    animation: hyperlink_anim 1.0s ease-in-out;
 }
 
 /* Стили для футера */
