@@ -1,6 +1,19 @@
 /* Импорт шрифта */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Анимации */
+@keyframes hyperlink_anim {
+    0% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(0.35);
+    }
+}
+
 /* Основные стили для всего сайта */
 body {
     margin: 0;
@@ -102,6 +115,7 @@ section a {
 
 section a:hover {
     color: #8E44AD; /* Более темный пурпурный при наведении */
+    animation: hyperlink_anim 1.0s ease-in-out;
 }
 
 /* Стили для футера */
