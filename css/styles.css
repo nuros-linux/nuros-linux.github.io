@@ -1,13 +1,12 @@
 /* Импорт шрифта */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Анимации */
-@keyframes hyperlinkanim {
-    0% {
+@keyframes button_anim {
+    0%{
         transform: scale(1);
     }
     100%{
-        transform: scale(0.9);
+        transform: scale(0.95);
     }
 }
 
@@ -137,9 +136,30 @@ footer a:hover {
 a{
     display: inline-block;
     text-decoration: none;
-    transition: all 0.5s ease; 
 }
 
 a:hover{
-    animation: hyperlinkanim 0.2s ease-in-out forwards;
+    animation: button_anim 0.1s ease-in-out forwards;
+}
+
+#features_button{
+    display: inline-block;
+    background-color:#50a2ff;
+    width: 120px;
+    height: 60px;
+}
+
+#features_button:hover{
+    animation: button_anim 0.2s ease-in-out forwards;
+}
+
+#download_button{
+    display: inline-block;
+    background-color: #D1E8E4;
+    width: 120px;
+    height: 60px;
+}
+
+#download_button:hover{
+    animation: button_anim 0.2s ease-in-out forwards;
 }
