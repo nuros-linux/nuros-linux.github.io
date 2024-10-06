@@ -1,6 +1,7 @@
 /* Импорт шрифта */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Анимации */
 @keyframes button_anim {
     0%{
         transform: scale(1);
@@ -63,7 +64,6 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #E74C3C; /* Переход на красный при наведении */
-    border-bottom: 3px solid #F39C12; /* Оранжевая линия при наведении */
 }
 
 /* Стили для основного контента */
@@ -140,6 +140,10 @@ a{
 
 a:hover{
     animation: button_anim 0.1s ease-in-out forwards;
+}
+
+button{
+    border-radius: 8px;
 }
 
 #features_button{
