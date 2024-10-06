@@ -1,16 +1,6 @@
 /* Импорт шрифта */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Анимации */
-@keyframes button_anim {
-    0%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(0.95);
-    }
-}
-
 /* Основные стили для всего сайта */
 body {
     margin: 0;
@@ -51,6 +41,18 @@ nav ul {
 
 nav ul li {
     margin: 0 20px;
+}
+
+a{
+    display: inline-block;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+}
+
+a:hover{
+    transform: scale(0.9);
 }
 
 nav ul li a {
@@ -133,17 +135,14 @@ footer a:hover {
     color: #E74C3C; /* Красный при наведении в футере */
 }
 
-a{
-    display: inline-block;
-    text-decoration: none;
-}
-
-a:hover{
-    animation: button_anim 0.1s ease-in-out forwards;
-}
-
 button{
-    border-radius: 8px;
+    border-radius: 13px;
+
+    transition: border-radius 0.2s ease-in-out;
+}
+
+button:hover{
+    border-radius: 0px;
 }
 
 #features_button{
