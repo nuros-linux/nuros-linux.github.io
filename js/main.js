@@ -1,3 +1,1 @@
-if (/mobile/i.test(navigator.userAgent)){
-    window.location.href='index-mobile.html'
-}
+console.log('Что ты тут забыл?');
