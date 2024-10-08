@@ -154,21 +154,13 @@ footer a:hover {
 #features_button{
     display: inline-block;
     background-color:#50a2ff;
-    width: 120px;
-    height: 60px;
-}
-
-#features_button:hover{
-    animation: button_anim 0.2s ease-in-out forwards;
+    width: 160px;
+    height: 80px;
 }
 
 #download_button{
     display: inline-block;
     background-color: #D1E8E4;
-    width: 120px;
-    height: 60px;
-}
-
-#download_button:hover{
-    animation: button_anim 0.2s ease-in-out forwards;
+    width: 160px;
+    height: 80px;
 }
