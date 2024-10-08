@@ -45,23 +45,39 @@ nav ul li {
 
 a{
     display: inline-block;
-    transition-property: transform;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 1s;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
 }
 
 a:hover{
     transform: scale(0.9);
 }
 
+a:active{
+    transform: scale(0.7);
+}
+
+button{
+    border-radius: 13px;
+    font-size: medium;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    border-radius: 0px;
+    transform: scale(0.9);
+}
+
+button:active{
+    transform: scale(0.7);
+}
+
 nav ul li a {
-    text-decoration: none;
     color: #4A90E2; /* Синий для ссылок */
     font-weight: 700;
     font-size: 1.5rem;
     padding: 15px 20px;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -133,16 +149,6 @@ footer a {
 
 footer a:hover {
     color: #E74C3C; /* Красный при наведении в футере */
-}
-
-button{
-    border-radius: 13px;
-
-    transition: border-radius 0.2s ease-in-out;
-}
-
-button:hover{
-    border-radius: 0px;
 }
 
 #features_button{
