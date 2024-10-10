@@ -46,26 +46,26 @@ nav ul li {
 a{
     display: inline-block;
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 a:hover{
-    transform: scale(0.9);
+    transform: scale(0.8);
 }
 
 a:active{
-    transform: scale(0.7);
+    transform: scale(0.6);
 }
 
 button{
     border-radius: 13px;
-    font-size: large;
-    transition: all 0.2s ease-in-out;
+    font-size: larger;
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover{
     border-radius: 0px;
-    transform: scale(0.9);
+    transform: scale(0.8);
 }
 
 button:active{
@@ -153,12 +153,12 @@ footer a:hover {
 
 #features_button{
     background-color:#50a2ff;
-    width: 180px;
-    height: 60px;
+    width: 250px;
+    height: 100px;
 }
 
 #download_button{
     background-color: #D1E8E4;
-    width: 180px;
-    height: 60px;
+    width: 250px;
+    height: 100px;
 }
