@@ -53,22 +53,23 @@ a:hover{
 }
 
 a:active{
-    transform: scale(0.8);
+    transform: scale(2);
 }
 
 button{
-    border-radius: 15px;
-    font-size: larger;
-    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    border: 0.5px solid;
+    transition: all 0.2s ease-in-out;
 }
 
 button:hover{
     border-radius: 0px;
-    transform: scale(0.9);
+    transform: scale(0.85);
 }
 
 button:active{
-    transform: scale(0.8);
+    transform: scale(1.5);
 }
 
 nav ul li a {
@@ -86,11 +87,11 @@ nav ul li a:hover {
 /* Стили для основного контента */
 section {
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px;
     background-color: #f8f9fa;
 }
 
-section h2 {
+section h1 {
     font-size: 3rem;
     font-weight: bold;
     color: #333;
@@ -107,7 +108,7 @@ section p {
 
 /* Акцентные элементы */
 section ul {
-    font-size: 1.5rem;
+    font-size: larger;
     color: #555;
     list-style-type: none;
     padding: 0;
@@ -148,16 +149,4 @@ footer a {
 
 footer a:hover {
     color: #E74C3C; /* Красный при наведении в футере */
-}
-
-#features_button{
-    background-color:#4A90E2;
-    width: 250px;
-    height: 100px;
-}
-
-#download_button{
-    background-color: #D1E8E4;
-    width: 250px;
-    height: 100px;
 }
