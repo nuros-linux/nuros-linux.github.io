@@ -12,13 +12,8 @@ body {
 
 /* Стили для шапки */
 header {
-    position: fixed;
     width: 100%;
     justify-content: center;
-}
-
-header nav {
-    display: inline;
 }
 
 header nav ul {
