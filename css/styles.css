@@ -7,40 +7,13 @@ body {
     margin:0;
     background-color: #f5f5f5;
     font-family: 'Noto Sans';
-    line-height: 1.8;
-}
-
-/* Стили для шапки */
-header {
-    position:fixed;
-    width: 100%;
-}
-
-header nav ul {
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    background-color: white;
-    border-bottom: 3px solid #e6e1e1;
-    border-top: 3px solid #e6e1e1;
-    transition: all 0.2s ease-in-out;
-}
-
-header nav ul:hover{
-    transform: scale(1.04);
-    border-bottom: 3px solid #E74C3C;
-    border-top: 3px solid #E74C3C;
-}
-
-header nav ul li {
-    margin: 0 20px;
+    line-height: 1.5;
 }
 
 a{
     display: inline-block;
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 a:hover{
@@ -67,19 +40,44 @@ button:active{
     transform: scale(1.5);
 }
 
-nav ul li a {
+header {
+    position:fixed;
+    width: 100%;
+}
+
+header nav ul {
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background-color: white;
+    border-bottom: 3px solid #e6e1e1;
+    border-top: 3px solid #e6e1e1;
+    transition: all 0.15s ease-in-out;
+}
+
+header nav ul:hover{
+    transform: scale(1.02);
+    border-bottom: 3px solid #E74C3C;
+    border-top: 3px solid #E74C3C;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
     color: #4A90E2; /* Синий для ссылок */
     font-weight: 700;
     font-size: 1.5rem;
     padding: 15px 20px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     color: #E74C3C; /* Переход на красный при наведении */
 }
 
-/* Стили для основного контента */
 section {
     text-align: center;
     padding: 60px;
@@ -88,6 +86,13 @@ section {
 
 section h1 {
     font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 2rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 30px;
@@ -130,7 +135,7 @@ section a:hover {
 /* Стили для футера */
 footer {
     background-color: #34495E; /* Темно-серый фон для футера */
-    padding: 50px;
+    padding: 90px;
     text-align: center;
     color: #fff;
     font-size: small;
