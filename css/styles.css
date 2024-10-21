@@ -80,7 +80,7 @@ header nav ul li a:hover {
 
 section {
     text-align: center;
-    padding: 60px;
+    padding: 90px;
     background-color: #f8f9fa;
 }
 
@@ -135,7 +135,7 @@ section a:hover {
 /* Стили для футера */
 footer {
     background-color: #34495E; /* Темно-серый фон для футера */
-    padding: 90px;
+    padding: 120px;
     text-align: center;
     color: #fff;
     font-size: small;
