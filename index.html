@@ -1,115 +1,358 @@
+
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Home|NurOS</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="robots" content="index,follow">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NurOS - Modern Linux Distribution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Comfortaa', sans-serif;
+        }
 
-<body id="iau9">
-    <div>ioyxg</div>
-    <div id="i6po" class="anmi-grid-row">
-        <div id="itjq" class="anmi-grid-column">
-            <div id="iyd2" class="anmi-grid-row">
-                <div id="iffs" class="anmi-grid-column">
-                    <div id="it00l" class="anmi-grid-row">
-                        <div id="irtfd" class="anmi-grid-column">
-                            <div id="iiyu56">NurOS</div>
-                        </div>
-                        <div id="icyzp" class="anmi-grid-column"><a href="#about" id="ij311z" class="anmi-link">About</a><a id="icfyb" href="#members" class="anmi-link">Members</a><a href="#donwload-section" id="i54lmf" class="anmi-link">Donwload</a><a href="#funfact" id="infmy1" class="anmi-link">FunFact</a></div>
-                    </div>
-                </div>
+        body {
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #4b6cb7 0%, #82a0e3 100%);
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #4b6cb7 0%, #82a0e3 100%);
+            color: white;
+            padding: 150px 0 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf5 100%);
+            padding: 30px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Release Date Section */
+        .release-date {
+            background: linear-gradient(135deg, #4b6cb7 0%, #82a0e3 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .countdown {
+            font-size: 36px;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+
+        /* Team Section */
+        .team {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 10px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf5 100%);
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-links a {
+            color: #4b6cb7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-links a:hover {
+            color: #82a0e3;
+        }
+
+        /* Download Section */
+        .download {
+            padding: 80px 0;
+            text-align: center;
+            background: white;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #4b6cb7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background 0.3s;
+            font-weight: 500;
+        }
+
+        .download-button:hover {
+            background: #82a0e3;
+        }
+
+        /* Footer */
+        footer {
+            background: #4b6cb7;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        h2 {
+            font-weight: 600;
+            color: #4b6cb7;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-weight: 500;
+            color: #4b6cb7;
+            margin-bottom: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .feature-grid,
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">NurOS</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#team">Team</a>
+                <a href="#download">Download</a>
+                <a href="#contact">Contact</a>
             </div>
-        </div>
-    </div>
-    <div id="irz7b" class="anmi-grid-row">
-        <div id="iycz3" class="anmi-grid-column">
-            <h1 id="irjua" class="anmi-heading">NurOS</h1>
-            <div id="itndw" class="text-main-content">Modern Linux is a distribution created for developers and users who value stability and performance. Inspired by the best aspects of Linux, NurOS offers simplicity and efficiency.<br /></div><a id="iar3s" class="anmi-button">Donwload</a>
-        </div>
-    </div>
-    <section id="about" class="anmi-section">
-        <div class="anmi-container" id="idecsi">
-            <h2 class="anmi-heading" id="i4qmhh">About us</h2>
-            <div id="iyvbyy">NurOS - A new GNU/Linux distribution that is not based on Arch, Debian, SUSE, or even Fedora/Red Hat Ent. and on pure Linux, just from scratch. It was created by the same users for the same users and has what users want, not companies and large organizations. Also, our distribution kit contains something that company distributions do not include. For example, from the GRUB theme box (including Beta-1.4, it has not yet been released) and the clipboard manager. Also coming from the box are: Neophyte, OpenRC, zsh and utilities that improve/replace the basic ones. And if we talk about ZSH, then of course there will be Oh My ZSH in the distribution.</div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 data-aos="fade-up">NurOS - Modern Linux</h1>
+            <p data-aos="fade-up" data-aos-delay="200">A distribution created for developers and users who value stability and performance. Inspired by the best aspects of Linux, NurOS offers simplicity and efficiency.</p>
         </div>
     </section>
-    <div id="donwload-section" class="anmi-grid-row">
-        <div id="imymf" class="anmi-grid-column">
-            <div id="ib541" class="anmi-grid-row">
-                <div id="iz8m8" class="anmi-grid-column">
-                    <h4 id="ij2gh" class="anmi-heading anmi-text-blue">Release</h4>
-                    <h2 id="ism014" class="anmi-heading">Release data 24.12.2024</h2>
-                    <div id="igrx8" class="text-main-content"><span id="ilxsk7">Although there will be few functions, but the minimum set of packages is. We also added something that is very useful, but in regular distributions there is no.</span></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="funfact" class="anmi-grid-row">
-        <div id="i8w4i" class="anmi-grid-column">
-            <h4 id="ihs4lb" class="anmi-heading anmi-text-blue">Fun Fact</h4>
-            <h2 id="iiacm" class="anmi-heading">We have a <span id="iblgoa"><span id="iwkfqt">lot</span></span> of interesting things to read<br /></h2>
-            <div id="ia21sa" class="text-main-content">This is still a small part of the fun facts</div>
-            <div id="ixzh1" class="anmi-grid-row">
-                <div id="ilpi3" class="anmi-grid-column feature-item">
-                    <h3 id="in9ef" class="anmi-heading"><span id="i7sg4y">Minimal set of garbage-free utilities</span></h3>
-                    <div id="i8isa" class="text-main-content">Our GNU/Linux distribution contains only minimal utilities and, although not too minimal, still useful utilities.<br /><br /></div>
-                </div>
-                <div id="ic57kq" class="anmi-grid-column feature-item">
-                    <h3 id="ica43q" class="anmi-heading">
-                        <h4 class="anmi-heading" id="ii93me">It is completely free and open-source<br /></h4>
-                    </h3>
-                    <div id="ickn3f" class="text-main-content">Our distribution has open source code and its child projects are also fully open source.<br /><br /></div>
-                </div>
-                <div id="idv32l" class="anmi-grid-column feature-item">
-                    <h3 id="ieu6p6" class="anmi-heading">
-                        <h4 class="anmi-heading" id="itny9j">Why is the release date set at 12/24<br /></h4>
-                    </h3>
-                    <div id="izqkf7" class="text-main-content">It was my (taliildar's) birthday then. Then let my distribution have it too.<br /><br /><br /></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="members" class="anmi-grid-row">
-        <div id="infwen" class="anmi-grid-column">
-            <h2 id="ihap8q" class="anmi-heading">Project participants</h2>
-            <div id="i6fjjy" class="text-main-content">Oh, it's a pity that there are only two of us.</div>
-            <div id="i5k4nf" class="anmi-grid-row">
-                <div id="inea73" class="anmi-grid-column testimonial-item">
-                    <div id="i2d7qp" class="anmi-grid-row">
-                        <div id="i4djop" class="anmi-grid-column">
-                            <h4 id="iqroa4" class="anmi-heading">taliildar</h4>
-                            <div id="iaqf2c" class="text-main-content">Creator, AnmiTali (Owner of AnmiTali and projects)</div>
-                        </div>
-                    </div>
-                    <div id="it3yug" class="text-main-content">A teenager from Kazakhstan. According to the Kazakh nation.</div>
-                </div>
-                <div id="idndjn" class="anmi-grid-column testimonial-item">
-                    <div id="ish0zj" class="anmi-grid-row">
-                        <div id="iuk8ib" class="anmi-grid-column">
-                            <h4 id="i04ztt" class="anmi-heading">GoldenVadim</h4>
-                            <div id="ia9ts3" class="text-main-content">Administration/Administrator and developer, works for himself</div>
-                        </div>
-                    </div>
-                    <div id="i8gt4n" class="text-main-content">A teenager from Ukraine</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="iz29ek" class="anmi-grid-row">
-        <div id="ik2rdi" class="anmi-grid-column">
-            <h2 id="i83vu9" class="anmi-heading">Contacts and communication<br /></h2>
-            <div id="in201n" class="text-main-content">All contacts and contacts with us</div><a id="ikt95d" href="javascript:window.open('https://t.me/anmitalicomm','_blank','width=700,height=600')" class="anmi-link">AnmiTali Telegram</a><a id="ikfnn5" href="javascript:window.open('https://t.me/nuros_tg','_blank','width=700,height=600')" class="anmi-link">Telegram Chanel</a><a id="ispobk" href="mailto:" class="anmi-link">Email</a>
-        </div>
-    </div>
-    <div id="iv3be5" class="anmi-grid-row">
-        <div id="ilriti" class="anmi-grid-column">
-            <div id="it6g1v" class="anmi-text-blue">Copyleft AnmiTali | NurOS | FOSP</div>
-        </div>
-    </div>
-</body>
 
+    <section id="features" class="features">
+        <div class="container">
+            <h2 data-aos="fade-up">Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <h3>Pure Linux From Scratch</h3>
+                    <p>Not based on any existing distribution - built from the ground up for maximum control and efficiency.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Minimal & Clean</h3>
+                    <p>Contains only essential utilities while maintaining functionality and user experience.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Open Source</h3>
+                    <p>Completely free and open-source under GPL 3 license.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="release-date">
+        <div class="container">
+            <h2 data-aos="fade-up">Release Date</h2>
+            <div class="countdown" data-aos="fade-up" data-aos-delay="200">
+                <div id="countdown">December 24, 2024</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <h2 data-aos="fade-up">Development Team</h2>
+            <div class="team-grid">
+                <div class="team-member" data-aos="fade-up">
+                    <h3>taliildar</h3>
+                    <p>Project Lead</p>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <h3>GoldenVadim</h3>
+                    <p>Core Developer</p>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <h3>AnmiTali Team</h3>
+                    <p>Development Team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="container">
+            <h2 data-aos="fade-up">Download NurOS</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Coming soon - Release date: December 24, 2024</p>
+            <a href="#" class="download-button" data-aos="fade-up" data-aos-delay="200">Download Coming Soon</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-aos="fade-up">Contact Us</h2>
+            <div class="contact-links" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://t.me/nuros_tg">Telegram: nuros_tg</a>
+                <a href="https://t.me/anmitalicomm">Community: anmitalicomm</a>
+                <a href="mailto:nuros@anmitali.kz">Email: nuros@anmitali.kz</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>NurOS © 2024 - Licensed under GPL 3</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoConstrainedPosition({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Disable download button
+        document.querySelector('.download-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Please wait for the official release on December 24, 2024');
+        });
+    </script>
+</body>
 </html>
