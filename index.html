@@ -1,241 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern Linux Distribution">
     <title>NurOS - Modern Linux Distribution</title>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Comfortaa', sans-serif;
-        }
-
-        body {
-            background: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header Styles */
-        header {
-            background: linear-gradient(135deg, #4b6cb7 0%, #82a0e3 100%);
-            color: white;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-
-        .nav-links a:hover {
-            opacity: 0.8;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #4b6cb7 0%, #82a0e3 100%);
-            color: white;
-            padding: 150px 0 80px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            font-weight: 300;
-        }
-
-        /* Features Section */
-        .features {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .feature-card {
-            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf5 100%);
-            padding: 30px;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Release Date Section */
-        .release-date {
-            background: linear-gradient(135deg, #4b6cb7 0%, #82a0e3 100%);
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-
-        .countdown {
-            font-size: 36px;
-            margin-top: 20px;
-            font-weight: 500;
-        }
-
-        /* Team Section */
-        .team {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .team-member {
-            text-align: center;
-            padding: 20px;
-            background: #f5f5f5;
-            border-radius: 10px;
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf5 100%);
-        }
-
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .contact-links a {
-            color: #4b6cb7;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .contact-links a:hover {
-            color: #82a0e3;
-        }
-
-        /* Download Section */
-        .download {
-            padding: 80px 0;
-            text-align: center;
-            background: white;
-        }
-
-        .download-button {
-            display: inline-block;
-            padding: 15px 30px;
-            background: #4b6cb7;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background 0.3s;
-            font-weight: 500;
-        }
-
-        .download-button:hover {
-            background: #82a0e3;
-        }
-
-        /* Footer */
-        footer {
-            background: #4b6cb7;
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-        }
-
-        h2 {
-            font-weight: 600;
-            color: #4b6cb7;
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            font-weight: 500;
-            color: #4b6cb7;
-            margin-bottom: 15px;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 36px;
-            }
-
-            .hero p {
-                font-size: 18px;
-            }
-
-            .feature-grid,
-            .team-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-links {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./js/AOS.js"></script>
+
     <header>
         <nav class="container">
             <div class="logo">NurOS</div>
@@ -295,7 +72,7 @@
                 </div>
                 <div class="team-member" data-aos="fade-up" data-aos-delay="100">
                     <h3>GoldenVadim</h3>
-                    <p>Developer and mobile OS lead</p>
+                    <p>Project administrator</p>
                 </div>
                 <div class="team-member" data-aos="fade-up" data-aos-delay="200">
                     <h3>AnmiTali Team</h3>
@@ -309,7 +86,7 @@
         <div class="container">
             <h2 data-aos="fade-up">Download NurOS</h2>
             <p data-aos="fade-up" data-aos-delay="100">Coming soon - Release date: December 24, 2024</p>
-            <a href="#" class="download-button" data-aos="fade-up" data-aos-delay="200">Download Coming Soon</a>
+            <a href="#" class="download-button" data-aos="fade-up" data-aos-delay="200">Download</a>
         </div>
     </section>
 
@@ -326,33 +103,9 @@
 
     <footer>
         <div class="container">
-            <p>NurOS © 2024 - Licensed under GPL 3</p>
+            <p>Copyright © NurOS - AnmiTali 2024 | Licensed under GPL3<br>Linux® is registered trademark of Linus Torvalds in Kazakhstan and in other countries.</p>
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        // Initialize AOS (Animate On Scroll)
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoConstrainedPosition({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Disable download button
-        document.querySelector('.download-button').addEventListener('click', function(e) {
-            e.preventDefault();
-            alert('Please wait for the official release on December 24, 2024');
-        });
-    </script>
 </body>
 </html>
