@@ -16,7 +16,7 @@ body {
 a {
     display: inline-block;
     text-decoration: none;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease;
 }
 
 a:hover{
@@ -161,7 +161,6 @@ nav {
 .contact-links a {
     color: #4b6cb7;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
 .contact-links a:hover {
@@ -175,14 +174,23 @@ nav {
     background: white;
 }
 
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.15); /* Enlarges slightly */
+    }
+}
+
 .download-button {
     padding: 15px 30px;
     background: #4b6cb7;
     color: white;
     border-radius: 5px;
     margin-top: 20px;
-    transition: background 0.3s;
     font-weight: 500;
+    animation: pulse 1s infinite;
 }
 
 .download-button:hover {
